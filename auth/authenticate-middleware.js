@@ -16,7 +16,7 @@ module.exports = (req, res, next) => {
       } else {
         req.user = {
           username: decodedToken.username,
-          role: decodedToken.role,
+          password: decodedToken.password,
         };
         next();
       }
